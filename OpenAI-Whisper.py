@@ -1,4 +1,5 @@
 """
+:Official Document https://github.com/openai/whisper
 Error:
     SystemError: initialization of _internal failed without raising an exception
     初始化失敗，Numpy及Numba版本不對打架，解決方案
@@ -14,7 +15,7 @@ MP4_ROOT = HOME.joinpath("Desktop/ISHS_Talks")
 MP4_FILE = MP4_ROOT.joinpath(
     "How can CO2 and light co-optimization improve propagation in Vertical Farms Ricardo Hernandez NCSU, USA..mp4")
 
-MP4 = str(MP4_FILE.resolve())
+MP4 = str(MP4_FILE.resolve())  # 路徑轉乘string
 print(MP4)
 
 model = whisper.load_model("base")  # 建立便是模型

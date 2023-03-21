@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "sk-*******************************" # 要去OpenAI的網站那邊抓API key
 
 # list models
 models = openai.Model.list()
